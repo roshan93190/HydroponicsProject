@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class AcmeProduction {
+public class AcmeFreshProduce {
 	
 	@Id
 	Integer productId;
