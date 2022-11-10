@@ -1,4 +1,4 @@
-package com.HydroPonics.entity;
+package com.AcmeFresh.modelEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 @Entity
 public class AcmeProduction {
-
+	
 	@Id
 	Integer productId;
 	
@@ -26,4 +26,5 @@ public class AcmeProduction {
 	Double Price;
 	
 	
+
 }

@@ -1,4 +1,4 @@
-package com.HydroPonics.entity;
+package com.AcmeFresh.modelEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,9 +15,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Data
-public class Customers {
+public class StoreCustomers {
 	
 	@Id
 	@SequenceGenerator(name="customer_generator", sequenceName = "customer_generator", allocationSize=50)

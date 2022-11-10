@@ -1,13 +1,14 @@
-package com.HydroPonics;
+package com.AcmeFresh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @SpringBootApplication
-public class DemoApplication {
+public class AcmeFreshApplication {
+	
+	
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(AcmeFreshApplication.class, args);
 	}
 
 }

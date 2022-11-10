@@ -1,6 +1,6 @@
-package com.HydroPonics.entity;
+package com.AcmeFresh.modelEntity;
 
-public enum CustomerServices {
+public enum ListOfInfrastructureProvidedForCustomer {
 	NFT_BASED_HYDROPONICS,
 	DUTCH_BASED_HYDROPONICS, 
 	COCOPEAT_BASED_HYDROPONICS, 

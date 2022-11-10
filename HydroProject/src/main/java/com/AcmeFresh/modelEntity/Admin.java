@@ -1,26 +1,29 @@
-package com.HydroPonics.entity;
-
+package com.AcmeFresh.modelEntity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Data
 @Getter
 @Setter
+@NoArgsConstructor
 @Entity
+@Data
 public class Admin {
+	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@SequenceGenerator(name="admin_sequence_generator", sequenceName = "admin_sequence_generator", allocationSize=50)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "admin_sequence_generator")
 	private Integer adminId;
 	
 	@NotNull(message = "Username cannot be NULL")
@@ -43,5 +46,5 @@ public class Admin {
 	@Column(unique = true)
 	@Email
 	private String email;
-	
+
 }
