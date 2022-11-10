@@ -1,5 +1,9 @@
 package com.HydroPonics.repository;
 
-public interface CustomerInterestedRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.HydroPonics.entity.CustomerInterestedService;
+
+public interface CustomerInterestedRepo extends JpaRepository<CustomerInterestedService, Integer>{
 
 }
