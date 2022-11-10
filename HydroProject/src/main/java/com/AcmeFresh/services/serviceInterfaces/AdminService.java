@@ -1,8 +1,11 @@
 package com.AcmeFresh.services.serviceInterfaces;
 
+import javax.validation.Valid;
+
 import com.AcmeFresh.DTO.LoginDTO;
 import com.AcmeFresh.modelEntity.AcmeFreshProduce;
 import com.AcmeFresh.modelEntity.Admin;
+import com.AcmeFresh.repository.AcmeFreshProduceDao;
 
 public interface AdminService {
 	
@@ -18,7 +21,7 @@ public interface AdminService {
 	
 	public String addInhouseProducts(AcmeFreshProduce produce, String key);
 	
-	public String updateProduct(AcmeFreshProduce produce, String key);
+	public String updateProduct(AcmeFreshProduceDao produce, String key);
 	
 	public String updatePriceOfProductById(Integer id, Double newPrice, String key);
 
